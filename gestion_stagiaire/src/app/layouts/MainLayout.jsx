@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 
 function MainLayout() {
   return (
-    <div className="min-w-screen min-h-screen flex flex-col bg-background">
+    <div className="min-w-screen min-h-screen flex flex-col bg-background dark:bg-background-darker">
       <Header />
 
       <main className="flex-grow">

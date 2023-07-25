@@ -16,7 +16,7 @@ const Interns = lazy(() => import ('../pages/auth/Interns'));
 const Teams = lazy(() => import ('../pages/auth/Teams'));
 const Reviews = lazy(() => import ('../pages/auth/Reviews'));
 const Daylies = lazy(() => import ('../pages/auth/Daylies'));
-const Testor = lazy(() => import ('../pages/tests/Testor'));
+const Testor = lazy(() => import ('../pages/tests/testor'));
 
 const ErrorPage = lazy(() => import('../pages/no-auth/ErrorPage'));
 const NotFoundPage = lazy(() => import('../pages/no-auth/NotFoundPage'));

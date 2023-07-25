@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/images/logo_full.svg';
 import * as URL from '../constants/url/urlFront';
+import DarkmodeSlider from './settings/DarkmodeSlider'
 
 function Header() {
   return (
@@ -15,6 +16,7 @@ function Header() {
       <NavLink to={URL.URL_REVIEWS}>Reviews</NavLink>
       <NavLink to={URL.URL_DAYLIES}>Daylies</NavLink>
       <NavLink to={URL.URL_TEST}>Test page</NavLink>
+      <DarkmodeSlider />
       <NavLink to={URL.URL_LOGIN}>
         <button className="btn btn-primary">
           Se connecter
