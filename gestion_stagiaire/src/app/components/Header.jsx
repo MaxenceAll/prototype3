@@ -14,6 +14,7 @@ function Header() {
       <NavLink to={URL.URL_TEAMS}>Equipes</NavLink>
       <NavLink to={URL.URL_REVIEWS}>Reviews</NavLink>
       <NavLink to={URL.URL_DAYLIES}>Daylies</NavLink>
+      <NavLink to={URL.URL_TEST}>Test page</NavLink>
       <NavLink to={URL.URL_LOGIN}>
         <button className="btn btn-primary">
           Se connecter

@@ -2,7 +2,8 @@ import { lazy, Suspense } from 'react';
 import { Route, Routes as RouteContainer } from 'react-router-dom';
 
 import MainLayout from '../layouts/MainLayout';
-import Loader from '../components/utils/Loader/Loader';
+import Loader from '../components/lib/utils/Loader';
+
 
 import * as URL from '../constants/url/urlFront';
 
@@ -15,6 +16,7 @@ const Interns = lazy(() => import ('../pages/auth/Interns'));
 const Teams = lazy(() => import ('../pages/auth/Teams'));
 const Reviews = lazy(() => import ('../pages/auth/Reviews'));
 const Daylies = lazy(() => import ('../pages/auth/Daylies'));
+const Testor = lazy(() => import ('../pages/tests/Testor'));
 
 const ErrorPage = lazy(() => import('../pages/no-auth/ErrorPage'));
 const NotFoundPage = lazy(() => import('../pages/no-auth/NotFoundPage'));
@@ -30,6 +32,7 @@ const Routes = () => {
                 <Route path={URL.URL_TEAMS} element={<SuspenseComponent component={Teams} />} />
                 <Route path={URL.URL_REVIEWS} element={<SuspenseComponent component={Reviews} />} />
                 <Route path={URL.URL_DAYLIES} element={<SuspenseComponent component={Daylies} />} />
+                <Route path={URL.URL_TEST} element={<SuspenseComponent component={Testor} />} />
             </Route>
             <Route path="*" element={<SuspenseComponent component={NotFoundPage} />} />
         </RouteContainer>

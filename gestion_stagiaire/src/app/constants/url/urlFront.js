@@ -6,6 +6,7 @@ export const URL_TEAMS = '/teams';
 export const URL_REVIEWS = '/reviews';
 export const URL_DAYLIES = '/daylies';
 export const URL_PROFILE = '/profile';
+export const URL_TEST = '/test';
 
 export const URL_REGISTER = '/register';
 export const URL_FORGOT_PASSWORD = '/forgot-password';

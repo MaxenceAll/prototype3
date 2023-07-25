@@ -7,7 +7,7 @@ module.exports = {
               primary: {
                   lightest: '#D7E5FF',
                   lighter: '#A1C2FC',
-                  light: '#6BA9F9',
+                  light: '#2E8FF4',
                   DEFAULT: '#2E8FF4',
                   dark: '#0E6BCC',
                   darker: '#084886',
@@ -16,7 +16,7 @@ module.exports = {
               secondary: {
                   lightest: '#FFE1BF',
                   lighter: '#FBCD8F',
-                  light: '#F7A94F',
+                  light: '#ED740F',
                   DEFAULT: '#ED740F',
                   dark: '#B35A0B',
                   darker: '#6C3606',
@@ -25,7 +25,7 @@ module.exports = {
               background: {
                   lightest: '#FFFFFF',
                   lighter: '#F7F8FA',
-                  light: '#F1F5F9',
+                  light: '#EBF4FE',
                   DEFAULT: '#EBF4FE',
                   dark: '#9EA3B0',
                   darker: '#6B7280',
