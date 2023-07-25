@@ -1,23 +1,13 @@
-import { Link } from "react-router-dom";
-import notFound from "../../assets/errors/404NotFound.gif";
-import styled from "styled-components";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import notFound from '../../assets/errors/404NotFound.gif';
 
 export default function NotFound() {
   return (
-    <STYLEDNotFoundContainer>
-      <img src={notFound} />
-      <h1>Oops, cette page n'existe pas !</h1>
-      <Link to="/">Retour page principale</Link>
-    </STYLEDNotFoundContainer>
+    <div className="w-full h-full flex flex-col justify-center items-center text-center">
+      <img src={notFound} alt="Not Found" />
+      <h3>Oops, cette page n'existe pas !</h3>
+      <Link to="/"><button className='btn btn-primary m-5'>Retour page principale</button></Link>
+    </div>
   );
 }
-
-const STYLEDNotFoundContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-`;

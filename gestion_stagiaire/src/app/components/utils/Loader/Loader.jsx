@@ -1,23 +1,16 @@
-import React from 'react'
-import './Loader.css'
-import { styled } from 'styled-components';
+import React from 'react';
 
 function Loader() {
   return (
-    <DIV_LoaderContainer>
-      <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
-    </DIV_LoaderContainer>
-
-  )
+    <div className="w-full h-full flex justify-center items-center">
+      <div className="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  );
 }
 
-export default Loader
-
-const DIV_LoaderContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  margin: auto auto;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-`;
+export default Loader;

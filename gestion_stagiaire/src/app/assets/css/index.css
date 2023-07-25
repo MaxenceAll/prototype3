@@ -1,55 +1,18 @@
-:root {
-    --main-color: #2E8FF4;
-    --main-color-light: #6BA9F9;
-    --main-color-lighter: #A1C2FC;
-    --main-color-lightest: #D7E5FF;
-    --main-color-dark: #0E6BCC;
-    --main-color-darker: #084886;
-    --main-color-darkest: #042C43;
+@import url(./base/base.css);
 
-    --secondary-color: #ED740F;
-    --secondary-color-light: #F7A94F;
-    --secondary-color-lighter: #FBCD8F;
-    --secondary-color-lightest: #FFE1BF;
-    --secondary-color-dark: #B35A0B;
-    --secondary-color-darker: #6C3606;
-    --secondary-color-darkest: #341B03;
+@import url(./components/component.css);
+@import url(./components/btn.css);
+@import url(./components/input.css);
 
-    --background-color: #EBF4FE;
-    --background-color-light: #F3F8FD;
-    --background-color-lighter: #F8FCFE;
-    --background-color-lightest: #FFFFFF;
-    --background-color-dark: #99aabb;
-    --background-color-darker: #556370;
-    --background-color-darkest: #000000;
+@tailwind utilities;
+
+/* ANIMATION CSS */
+.anim-delay-100 {
+    animation-delay: 0.1s;
 }
-
-
-*:visited,
-*:link,
-*:focus {
-    text-decoration: inherit;
-    color: inherit
+.anim-delay-300 {
+    animation-delay: 0.3s;
 }
-
-* {
-    list-style-type: none;
-}
-
-ul {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color-100);
-    display: flex;
-    justify-content: center;
-    color: black;
-    overflow-x: hidden;
+.anim-delay-600 {
+    animation-delay: 0.6s;
 }

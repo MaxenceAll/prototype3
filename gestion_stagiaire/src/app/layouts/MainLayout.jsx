@@ -1,37 +1,20 @@
-import React from 'react'
-import styled from "styled-components";
+import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Outlet } from 'react-router-dom';
 
 function MainLayout() {
   return (
-    <DIV_AppContainer>
-
+    <div className="min-w-screen min-h-screen flex flex-col bg-background">
       <Header />
 
-      <MAIN_Container>
+      <main className="flex-grow">
         <Outlet />
-      </MAIN_Container>
+      </main>
 
       <Footer />
-      
-    </DIV_AppContainer>
-  )
+    </div>
+  );
 }
 
-export default MainLayout
-
-const DIV_AppContainer = styled.div`
-  min-width: 100dvw;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; 
-  background-color: var(--background-color);
-`;
-
-
-const MAIN_Container = styled.main`
-
-`;
-
+export default MainLayout;
